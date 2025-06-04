@@ -1,0 +1,92 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="dashboard-container" style="display: flex; font-family: sans-serif;">
+    <!-- Sidebar -->
+    <aside style="width: 220px; background-color: #f5f6fa; padding: 1.5rem; min-height: 100vh;">
+        <h2 style="margin-bottom: 2rem;">Dashboard</h2>
+        <nav>
+            <ul style="list-style: none; padding: 0;">
+                <li><a href="#">Lessons</a></li>
+                <li><a href="#">Clients</a></li>
+                <li><a href="#">Instructors</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main style="flex-grow: 1; padding: 2rem;">
+        <h1>Hello (Name of User)</h1>
+
+        <!-- Top Stats -->
+        <section style="display: flex; gap: 1.5rem; margin-top: 2rem;">
+            <div style="flex: 1; background: #f4faff; padding: 1rem; border-radius: 12px;">
+                <h4>Earnings this Month</h4>
+            </div>
+            <div style="flex: 1; background: #f4faff; padding: 1rem; border-radius: 12px;">
+                <h4>Clients</h4>
+            </div>
+            <div style="flex: 1; background: #f4faff; padding: 1rem; border-radius: 12px;">
+                <h4>Total Sales</h4>
+            </div>
+        </section>
+
+        <!-- Charts -->
+        <section style="display: flex; gap: 1.5rem; margin-top: 2rem;">
+            <div style="flex: 2; background: #fff; padding: 1rem; border-radius: 12px;">
+                <h4>Overview</h4>
+                <p>Monthly Earning (Bar chart goes here)</p>
+                <!-- Replace with chart.js later -->
+                <div style="height: 200px; background: #f0f0f0; border-radius: 8px;"></div>
+            </div>
+            <div style="flex: 1; background: #fff; padding: 1rem; border-radius: 12px;">
+                <h4>Clients</h4>
+                <p>Clients that book lessons</p>
+                <!-- Replace with doughnut chart later -->
+                <div style="height: 200px; background: #f1f0f0; border-radius: 50%; margin: auto;"></div>
+            </div>
+        </section>
+
+        <!-- Upcoming Lessons -->
+        <section style="margin-top: 2rem; background: #fff; padding: 1rem; border-radius: 12px;">
+            <h4>Upcoming Lessons</h4>
+            <table style="width: 100%; margin-top: 1rem; border-collapse: collapse;">
+                <thead>
+                    <tr style="text-align: left; border-bottom: 1px solid #ddd;">
+                        <th>Client</th>
+                        <th>Type</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Code</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Okuhle Dyasi</td>
+                        <td>Practical</td>
+                        <td>30-June-2025</td>
+                        <td>10:00</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>Zesande Mbekwa</td>
+                        <td>Theory</td>
+                        <td>2-July-2025</td>
+                        <td>9:30</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Athenkosi Sonakile</td>
+                        <td>Practical</td>
+                        <td>2-July-2025</td>
+                        <td>15:00</td>
+                        <td>8</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</div>
